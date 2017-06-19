@@ -22,7 +22,7 @@ Scenario('IH:Tests1: Check that I can see Announcement on the home page as a hea
   I.click('Home Page')
   I.see('Express');
 
-  I.click('Page 2')
+  I.click('Shamus and Aimee Page')
   I.seeInCurrentUrl('page2')
 
 });
