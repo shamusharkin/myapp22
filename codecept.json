@@ -1,0 +1,22 @@
+{
+  "tests": "./test/*test.js",
+  "timeout": 10000,
+  "output": "./test/output",
+  "helpers": {
+    "WebDriverIO": {
+      "url": "http://localhost:3000",
+      "browser" : "chrome",
+      "windowSize": "maximize",
+      "desiredCapabilities" : {
+        "phantomjs.binary.path" : "./node_modules/.bin/phantomjs"
+      }
+    }
+  },
+  "include": {},
+  "bootstrap": false,
+  "mocha": {
+    "reporterOptions": {
+      "reportDir": "output"
+    }
+  }
+}
